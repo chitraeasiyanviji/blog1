@@ -1,11 +1,22 @@
 
          const btn = document.querySelector('button');
 
-        var name = () => {
+        var getName = () => {
 
              var name1 = document.getElementById("demo").value;
-             alert("hello!" + name); 
-             btn.style.cssText
+             var name2 = document.getElementById("msg").value;
+             
+             
+                        
+          const blog= { title: "New blog", Desc : "zxzxzx", Img: "url" }
+          blog.title = name1;
+          console.log(blog.title);
+          blog.Desc = name2;
+          console.log(blog.Desc);         
+     
+          document.getElementById("UserName").innerHTML= blog.title;  
+          document.getElementById("UserWord").innerHTML= blog.Desc;  
+             
        
 
      }
